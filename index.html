@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title>MERMAY</title>
+   
+   <script>
+     function banner(){
+        var text = confirm("Are you intrested in beautiful mermaid drawings? then click OK");
+          return text;
+       }
+     function answer(){
+      var radio = document.getElementsByName("trivia");
+      var selection = false;
+      var message = ""; 
+      for( var i = 0; i < radio.length; i++) {
+       if(radio[i].value == "correct" && radio[i].checked == true) {
+         selection = true;
+       } //end if statement
+     } //end for loop
+
+     if(selection == true) {
+       message = message + "<b><p style='color:green'>Way to go!</p></b>";
+     } else {
+      message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+    }
+     document.getElementById("response").innerHTML = message;
+
+   } //end function answer
+</script>
+  </head>
+   <footer>Rose Biros</footer>
+  <body id="background">
+  <a href="https://www.pinterest.com/marykate6404/fantasy-art-mermaids-seafolk/" onclick="return banner()">
+   <header>Mermay</header>
+ </a>
+
+    <nav>
+      <ul id="navumenu">
+        <li class="navitem"> <a href="art.html">Art </a></li>
+        <li class="navitem"> <a href="games.html">Games </a></li>
+        <li class="navitem"> <a href="videos.html">Videos </a></li>
+      </ul>
+    </nav>
+
+ <div id="rightside">
+
+   <div class="wrap-trivia">
+    <h2>Mermaid Lore Trivia Questions</h2>
+    <p class="paragraph2">In assyria mythology which goddess was the first to change into a mermaid because she unintentionally killed her lover?</p>
+    <form>
+      <div id="response"> </div>
+      <input type="radio" name="trivia" value="incorrect">Aquantis<br>
+      <input type="radio" name="trivia" value="correct">Atargatis<br>
+      <input type="radio" name="trivia" value="incorrect">Amatagis<br>
+      <input type="radio" name="trivia"
+      value="incorrect">Aqualantus<br>
+      
+    <input type="button" value="submit" id="button"  onclick="answer()">
+    
+    </form>
+  </div>
+
+  
+ 
+  
+</div>
+
+ <div id="leftside">
+    <h1>Mermaids Are Cool</h1>
+    <p class="paragraph">In the month of may there is a special activity for artists it's called <i>mermay</i>. If you are familiar with inktober its like that, where you draw a mermaid each day in the month of may, and if you have social media you can post it with the hashtage <u>#mermay</u> and search for other artists mermay art.<b> Time to start drawing.</b>
+    </p>
+
+   <div class="wrap-list">
+    <ol>
+       <li class="listitem"> Mermay was created by Tom Bancroft</li>
+       <li class="listitem">The hashtage <span class="wrap-text">#MerMay </span> will show you the community of other artists participating in MerMay</li>
+       <li class="listitem">Mermay is not as popular as inktober but as of May 2018 it is slowy rising in popularity</li>
+    </ol>
+   </div>
+    <iframe width="560" height="315" 
+   src="https://www.youtube.com/embed/njHbDOo4Y5M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+ </iframe>
+  
+</div>
+ <img
+  src="https://thumbs.dreamstime.com/z/be-mermaid-make-waves-be-mermaid-make-waves-inspirational-quote-summer-modern-calligraphy-phrase-hand-drawn-105108049.jpg"/>
+     <hr>
+
+<div id="clearfloat"></div>
+
+
+  
+
+ <center>Website made by Rose Biros <a href= "https://www.goartalacarte.com/">Here's a link to a great artist who does mermay</a> </center>
+
+
+  </body>
+</html>
